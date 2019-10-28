@@ -59,7 +59,7 @@ public class FlutterPaystoreClientPlugin implements MethodCallHandler {
       paymentRequest.setValue(new BigDecimal(value));
       paymentRequest.setAppTransactionId(transactionId);
       paymentRequest.setAppInfo(appInfo);
-      paymentRequest.setPaymentTypes(paymentTypes);
+//      paymentRequest.setPaymentTypes(paymentTypes);
       PaymentClient.PaymentCallback<PaymentV2> paymentCallback = new PaymentClient.PaymentCallback<PaymentV2>() {
         @Override
         public void onSuccess(PaymentV2 paymentV2) {

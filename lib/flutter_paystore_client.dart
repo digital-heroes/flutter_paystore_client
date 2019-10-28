@@ -13,7 +13,7 @@ class FlutterPaystoreClient {
     @required String appVersion,
     @required String applicationId,
     @required String token,
-    @required List paymentTypes
+    List paymentTypes
   }) async {
     final String payment = await _channel.invokeMethod('startPaymentV2', <String, dynamic>{
       'transactionId': transactionId,
