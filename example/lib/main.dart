@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await FlutterPaystoreClient.startPaymentV2;
+      platformVersion = await FlutterPaystoreClient.startPaymentV2();
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
